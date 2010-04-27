@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -x
+
+/usr/bin/jhbuild -f /srv/jhbuild/gtk-buildmaster/jhbuildrc bot --start-server --buildbot-dir=/srv/jhbuild/gtk-buildmaster
+

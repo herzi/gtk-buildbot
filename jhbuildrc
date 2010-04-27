@@ -1,0 +1,7 @@
+nonetwork = True
+prefix = os.path.expanduser('~/installed')
+moduleset = 'gtk'
+modules = ['gtk+']
+
+os.environ['INSTALL'] = '/usr/bin/install-check'
+
