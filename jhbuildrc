@@ -1,5 +1,5 @@
 nonetwork = True
-prefix = os.path.expanduser('~/installed')
+prefix = '/srv/jhbuildbot/gtk-buildbot/install'
 moduleset = 'gtk'
 modules = ['gtk+']
 
