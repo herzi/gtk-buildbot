@@ -1,7 +1,9 @@
 nonetwork = True
-prefix = '/srv/jhbuildbot/gtk-buildbot/install'
+prefix = '/srv/jhbuildbot/gtk-buildmaster/install'
 moduleset = 'gtk'
 modules = ['gtk+']
+
+os.chdir('/srv/jhbuildbot/gtk-buildmaster')
 
 os.environ['INSTALL'] = '/usr/bin/install-check'
 

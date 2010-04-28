@@ -1,6 +1,10 @@
 #!/bin/bash
 
-set -x
+# set -x
 
-/usr/bin/jhbuild -f /srv/jhbuild/gtk-buildmaster/jhbuildrc bot --start-server --buildbot-dir=/srv/jhbuild/gtk-buildmaster
+/usr/bin/jhbuild -f /srv/jhbuildbot/gtk-buildmaster/jhbuildrc \
+        bot \
+        --start-server \
+        --buildbot-dir=/srv/jhbuildbot/gtk-buildmaster/builddir \
+        --daemon $@
 
