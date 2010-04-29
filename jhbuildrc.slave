@@ -1,0 +1,30 @@
+# vim:set ft=python sw=4 et:
+
+try:
+    os.environ['JHBUILDBOT_SETUP']
+except KeyError:
+    if os.environ['JHBUILDBOT_MASTER']:
+        jhbuildbot_master = os.environ['JHBUILDBOT_MASTER']
+        del os.environ['JHBUILDBOT_MASTER']
+    else:
+        print "environment variable JHBUILDBOT_MASTER is not set. aborting..."
+        exit(1)
+
+    if os.environ['JHBUILDBOT_HOSTNAME']:
+        jhbuildbot_slavename = os.environ['JHBUILDBOT_HOSTNAME']
+        del os.environ['JHBUILDBOT_HOSTNAME']
+    else:
+        print "environment variable JHBUILDBOT_HOSTNAME is not set. aborting..."
+        exit(1)
+
+    if os.environ['JHBUILDBOT_PASSWORD']:
+        jhbuildbot_password = os.environ['JHBUILDBOT_PASSWORD']
+        del os.environ['JHBUILDBOT_PASSWORD']
+    else:
+        print "environment variable JHBUILDBOT_PASSWORD is not set. aborting..."
+        exit(1)
+
+    os.environ['JHBUILDBOT_SETUP'] = '1'
+
+prefix = os.path.expanduser('~/install')
+

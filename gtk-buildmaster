@@ -6,5 +6,6 @@
         bot \
         --start-server \
         --buildbot-dir=/srv/jhbuildbot/gtk-buildmaster/builddir \
+        --slaves-dir=/srv/jhbuildbot/gtk-buildmaster/slaves \
         --daemon $@
 
