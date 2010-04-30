@@ -1,5 +1,5 @@
 PACKAGE=gtk-buildbot
-VERSION=2010.04.29
+VERSION=2010.04.30
 BUILDDIR=build
 DISTDIR=$(PACKAGE)-$(VERSION)
 SRVDIR=/srv/jhbuildbot/gtk-buildmaster

@@ -27,4 +27,4 @@ except KeyError:
     os.environ['JHBUILDBOT_SETUP'] = '1'
 
 prefix = os.path.expanduser('~/install')
-
+module_autogenargs['gtk-doc'] = autogenargs + ' --disable-scrollkeeper'
